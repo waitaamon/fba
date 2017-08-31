@@ -1,0 +1,45 @@
+/* -------------------------------------------------------
+----------- Bact-to-Top Styling Starts Here --------------
+---------------------------------------------------------*/
+
+
+.back-to-top {
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 35px;
+  height: 35px;
+  z-index: 90;
+  display: none;
+  text-decoration: none;
+  color: #0E1729;
+}
+
+.back-to-top i {
+  position: relative;
+  left: 13px;
+  top: 8px;
+  font-size: 24px;
+  color: #FFF;
+}
+
+.back-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+.back-to-top:focus {
+  color: #fff;
+}
+
+@media only screen and (max-width: 420px) {
+  .back-to-top {
+    right: 10px;
+  }
+}
+
+/* -------------------------------------------------------
+----------- Bact-to-Top Styling Ends Here --------------
+---------------------------------------------------------*/

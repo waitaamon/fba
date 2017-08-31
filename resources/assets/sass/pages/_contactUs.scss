@@ -1,0 +1,210 @@
+/* -------------------------------------------------------
+----------- Contact Page Styling Starts Here -------------
+---------------------------------------------------------*/
+
+.contact-us {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: #FFFFFF;
+}
+
+.contact-bg {
+  background: #F2F2F2;
+}
+
+.ct-intro {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background-size: cover;
+  background-position: left;
+}
+
+.ct-intro h5 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #072DEF;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+
+.ct-intro h2 {
+  font-family: Poppins;
+  font-size: 2em;
+  color: #111;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+
+.aft-line {
+  height: 2px;
+  width: 50px;
+  background: #072DEF;
+  margin-top: 1em;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ct-intro:hover .aft-line {
+  width: 100px;
+}
+
+.ct-section-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.ct-section-title {
+  padding: 0em;
+}
+
+.ct-section-title i {
+  font-size: 48px;
+  color: #6F4E37;
+}
+
+
+.ct-section-title h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 2em;
+  color: #111;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.ct-section-content {
+  padding: 0em;
+}
+
+.ct-section-content span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ct-section-content p {
+  font-family: Raleway;
+  font-size: 13px;
+  color: #111;
+  padding-top: 1em;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+@media only screen and (min-width: 767px) {
+  .ct-intro {
+    padding: 1em;
+  }
+
+  .ct-intro h2 {
+    font-size: 3em;
+  }
+
+  .ct-intro h2 span {
+    font-size: 1em;
+  }
+
+  .ct-section-title {
+    padding: 0em;
+  }
+}
+
+/* ------------ Contact Form Styling --------*/
+
+
+label {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.form-control {
+  border: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  background: transparent;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form-control:focus {
+  border-color: #072DEF;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #999999;
+}
+.form-control:-moz-placeholder {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #999999;
+}
+.form-control::-moz-placeholder {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #999999;
+}
+.form-control:-ms-input-placeholder {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #999999;
+}
+
+.text-muted {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #222;
+}
+
+.text-muted strong {
+  color: #FF3333;
+}
+
+.btn-send {
+  font-family: Quicksand;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  color: #FFF;
+  background: #072DEF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-send:hover, .btn-send:focus {
+  color: #FFFFFF;
+  background: #000000;
+  outline: none !important;
+}
+
+
+
+/* ----- Contact Form Styling Ends Here -----*/
+
+
+/* -------------------------------------------------------
+----------- Contact Page Styling Ends Here -------------
+---------------------------------------------------------*/
+

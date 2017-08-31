@@ -1,0 +1,130 @@
+/* -------- About Team Styling Starts Here -------- */
+
+.team {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #E9EBEE;
+}
+
+.team-intro {
+  padding: 1em;
+}
+
+.team-intro h4 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+}
+
+.team-intro h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 34px;
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.team-intro p {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #222;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  padding-top: 1em;
+}
+
+.team-intro p:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 75px;
+  background: #666;
+  margin-top: 1em;
+}
+
+.team-member {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.team-member img {
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%);
+}
+
+.team-profile {
+  background: #FFF;
+  padding-top: 30px;
+  z-index: -111;
+  transition: 0.5s;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.team-profile h2 {
+  font-family: Montserrat;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.team-profile h4 {
+  font-family: Roboto;
+  font-size: 1em;
+  padding-top: 1em;
+  letter-spacing: 1px;
+}
+
+.team-overlay {
+  transition: 0.5s;
+}
+
+.team-overlay ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.team-overlay li {
+  display: inline;
+  font-family: Roboto;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team-overlay i {
+  font-size: 16px;
+  padding: 5px;
+  color: #111;
+}
+
+.team-overlay i:hover {
+  opacity: 0.7;
+}
+
+.team-member:hover .team-profile {
+  opacity: 1;
+  -webkit-transform: translate3d(0,-50px,0);
+  transform: translate3d(0,-50px,0);
+}
+
+@media only screen and (min-width: 768px) {
+  .team-intro h1 {
+    font-size: 48px;
+  }
+  .team-profile h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* -------About Team Styling Ends Here -------- */

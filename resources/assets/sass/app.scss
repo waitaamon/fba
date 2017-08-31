@@ -1,0 +1,44 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins|Quicksand|Roboto|Work+Sans');
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//Owl
+
+
+//Base
+
+@import "base/reset";
+
+
+//vendors
+
+
+//components
+@import "components/template";
+@import "components/mainWrapper";
+@import "components/humburgerMenu";
+@import "components/menu";
+@import "components/homeSlider";
+@import "components/section";
+@import "components/counter";
+@import "components/cta";
+@import "components/team";
+@import "components/btt";
+@import "components/footer";
+@import "components/media";
+
+//pages
+
+@import "pages/homepage";
+@import "pages/aboutUs";
+@import "pages/agency";
+@import "pages/contactUs";
+@import "pages/aboutMe";
+@import "pages/portfolio";
+@import "pages/services";

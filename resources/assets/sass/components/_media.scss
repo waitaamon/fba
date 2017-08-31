@@ -1,0 +1,257 @@
+/* ----- About-Section-2 Media Queries -----*/
+
+
+
+@media only screen and (min-width: 767px ) {
+
+  .about-intro {
+    padding: 0em;
+  }
+
+  .about-intro h1 {
+    font-size: 58px;
+  }
+
+  .work-section h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+  }
+
+  .work-section h4 {
+    font-size: 18px;
+  }
+  .counter-up {
+    margin-bottom: 2em;
+  }
+
+  .cta-content h2 {
+    font-size: 48px;
+  }
+  .counter-text {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .work-item {
+    padding: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+  }
+}
+
+/* ---------------------------------------------------------
+------------ Media Queries homepage elements --------------
+-----------------------------------------------------------*/
+
+
+@media only screen and (min-width: 767px) {
+
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 20px;
+  }
+  #left { left: 0; }
+  #right { right: 0; }
+
+  #top {
+    left: 0; right: 0;
+    height: 20px;
+  }
+  #bottom {
+    left: 0; right: 0;
+    height: 20px;
+  }
+
+
+  /* ----- Bigger Body Border -----*/
+
+  #top-big, #bottom-big, #left-big, #right-big {
+    background: #FFFFFF;
+    position: fixed;
+    z-index: 111;
+  }
+  #left-big, #right-big {
+    top: 0; bottom: 0;
+    width: 20px;
+  }
+  #left-big { left: 0; }
+  #right-big { right: 0; }
+
+  #top-big {
+    left: 0; right: 0;
+    height: 20px;
+  }
+  #bottom-big {
+    left: 0; right: 0;
+    height: 40px;
+  }
+
+  #top-big { top: 0; }
+  #bottom-big { bottom: 0; }
+
+  /* ----- Bigger Body Border -----*/
+
+
+  .logo {
+    left: 40px;
+    top: 40px;
+    position: absolute;
+  }
+
+  .intro {
+    padding-bottom: 100px;
+  }
+
+  .nav-trigger {
+    right: 30px;
+    top: 40px;
+    z-index: 31;
+    display: none;
+  }
+
+  #menu{
+    display: none;
+  }
+  .logo{
+    z-index: 41;
+  }
+
+  nav#main-nav {
+    display: block;
+    margin: 0 0 30px 0;
+    padding-top:2%;
+    padding-bottom:2%;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 0;
+    text-align: right;
+    z-index: 40;
+  }
+  nav#main-nav a {
+    line-height: 50px;
+    margin-right:3%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #cccccc;
+    cursor: pointer;
+  }
+
+  nav#main-nav a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  .intro-content h2 {
+    font-size: 58px;
+  }
+
+  .intro-personal h2 {
+    font-size: 4em;
+  }
+
+  .pt-portfolio-single {
+    margin-top: 200px;
+  }
+
+  .pt-portfolio-single h3 {
+    font-size: 18px;
+  }
+
+  .pt-portfolio-single h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0 0 50px 0;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+  .intro-content {
+    padding-left: 2.5em;
+  }
+
+  .intro-content p {
+    padding-right: 2em;
+  }
+}
+
+@media only screen and (max-width: 767px ) {
+
+  .intro-personal {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .intro-personal h2 {
+    font-size: 2.5em;
+  }
+
+  .intro-personal p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 420px ) {
+
+  #top, #bottom, #left, #right {
+    background: #FFF;
+    position: fixed;
+    z-index: 11;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 0px;
+  }
+  #left { left: 0; }
+  #right { right: 0; }
+
+  #top {
+    left: 0; right: 0;
+    height: 0px;
+  }
+  #bottom {
+    left: 0; right: 0;
+    height: 0px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .nav-trigger {
+    right: 5px;
+    top: 20px;
+  }
+
+  .intro-personal {
+    padding-top: 100px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .intro-personal h2 {
+    font-size: 2em;
+  }
+
+  .intro-personal p {
+    font-size: 16px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+---------- Media Queries homepage elements Ends ------------
+-----------------------------------------------------------*/

@@ -1,0 +1,271 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins;
+}
+
+
+::-moz-selection {
+  color: #FFFFFF;
+  background: #000;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #000;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.custompadding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.rightpadding {
+  padding-left: 0px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  opacity: 1;
+  background-color: #000;
+  z-index: 99;
+  text-align: center;
+}
+
+#loading-image {
+  display: inline;
+  top: 40%;
+  position: relative;
+  z-index: 100;
+}
+
+
+/* -----Body Border -----*/
+
+#top, #bottom, #left, #right {
+  background: #F1F1F1;
+  position: fixed;
+  z-index: 111;
+}
+#left, #right {
+  top: 0; bottom: 0;
+  width: 0;
+}
+#left { left: 0; }
+#right { right: 0; }
+
+#top {
+  left: 0; right: 0;
+  height: 0;
+}
+#bottom {
+  left: 0; right: 0;
+  height: 0;
+}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+.s-color{
+  color: #f4a742 !important;
+}
+
+/* ------ Body Border End ------*/
+
+
+
+
+/* ----- Bigger Body Border -----*/
+
+#top-big, #bottom-big, #left-big, #right-big {
+  background: #FFFFFF;
+  position: fixed;
+  z-index: 111;
+}
+#left-big, #right-big {
+  top: 0; bottom: 0;
+  width: 0;
+}
+#left-big { left: 0; }
+#right-big { right: 0; }
+
+#top-big {
+  left: 0; right: 0;
+  height: 0;
+}
+#bottom-big {
+  left: 0; right: 0;
+  height: 35px;
+}
+
+#top-big { top: 0; }
+#bottom-big { bottom: 0; }
+
+/* ----- Bigger Body Border -----*/
+
+
+/* ----- Wrapper and Main Content----- */
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 21px;
+  color: #072DEF;
+  letter-spacing: 0px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.colored {
+  color: #072DEF;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.logo:focus {
+  text-decoration: none;
+  color: #111;
+}
+
+.logo span {
+  padding: 6px;
+  color: #FFFFFF;
+  background: transparent;
+}
+
+.logo:hover span, .logo:focus span {
+  color: #072DEF;
+}
+
+
+.nav-logo {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  padding: 5px 10px;
+  max-width: 250px;
+  letter-spacing: -1px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #111;
+  text-decoration: none;
+  z-index: 11;
+}
+
+.nav-logo:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+.nav-logo:focus {
+  text-decoration: none;
+}
+
+.nav-logo span {
+  padding: 2px;
+  color: #FFF;
+  background: #111;
+}
+
+
+.vertical-link {
+  transform: rotate(270deg);
+  transform-origin: right top 0;
+  float: left;
+  position: fixed;
+  top: 45%;
+  right: 20px;
+  z-index: 30;
+  text-align: center;
+  color: #2C303A;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.vertical-link:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80px;
+  margin-top: -9px;
+  margin-left: -80px;
+  background: #444;
+  transition: 0.3s;
+}
+
+.vertical-link:hover {
+  text-decoration: none;
+  color: #222;
+}
+
+
+.vertical-link:focus {
+  text-decoration: none;
+}
+
+.vertical-link:hover:after {
+  margin-left: 0em;
+}
+
+@media only screen and (max-width: 767px) {
+  .vertical-link {
+    display: none;
+  }
+}
+
+
+/* -------------------------------------------------------
+-------------- Template Basic Styling Ends ---------------
+---------------------------------------------------------*/

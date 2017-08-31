@@ -1,0 +1,286 @@
+/* ---------------------------------------------------------
+-------------- Menu & Navigation Styling Start --------------
+-----------------------------------------------------------*/
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.98);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.menu-container {
+  height: 100%;
+  max-width: 250px;
+  margin: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 150px;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-0%);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.menu-active .menu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.menu-active .menu .menu-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+
+.menu-list li {
+  background: transparent;
+  padding: 0.75em;
+  font-family: Poppins;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.4;
+  -webkit-transform: translateY(50%) rotateX(75deg);
+  transform: translateY(50%) rotateX(75deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.menu-active .menu-list li {
+  opacity: 1;
+  -webkit-transform: translateY(0) rotateX(0deg);
+  transform: translateY(0) rotateX(0deg);
+}
+
+.dropdown .dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+  background: transparent;
+  position: relative;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: 0 0 0 0 #EFEFEF;
+  text-align: left;
+}
+
+.dropdown li {
+  padding: 0.5em;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.dropdown li a {
+  color: #FFF;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: transparent;
+  background-image: none;
+}
+
+.menu-container a {
+  position: relative;
+  text-decoration: none;
+  color: #FFF;
+  transition: all 0.5s;
+}
+
+.menu-container a:hover {
+  color: #FFF;
+}
+
+
+.menu-container a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: #072DEF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.menu-container li:hover a::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.menu-social ul {
+  margin-top: 50px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu-social li {
+  display: inline;
+}
+
+.menu-social i, .menu-social a {
+  font-size: 24px;
+  padding-right: 0.3em;
+  color: #FFF;
+  z-index: 21;
+}
+
+.menu-social i:hover {
+  color: #072DEF;
+}
+
+.menu-social a::before {
+  display: none;
+}
+
+
+/* ---------------------------------------------------------
+-------------- Menu & Navigation Styling End --------------
+-----------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------
+-------------- Menu & Navigation Styling Start --------------
+-----------------------------------------------------------*/
+
+
+#nav-menu {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  /* the secondary navigation is covered by the main element */
+  z-index: 11;
+  width: 260px;
+  background-color: #F1F1F1;
+  overflow-y: auto;
+  box-shadow: 0px 0px 5px #111;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .5s 0s, visibility 0s .5s;
+  -moz-transition: -moz-transform .5s 0s, visibility 0s .5s;
+  transition: transform .5s, visibility 0s .5s cubic-bezier(.77,0,.175,1);
+  -webkit-transition:.5s, visibility 0s .5s cubic-bezier(.77,0,.175,1);
+  /* this creates the subtle slide in animation of the navigation */
+  -webkit-transform: translateX(280px);
+  -moz-transform: translateX(280px);
+  -ms-transform: translateX(280px);
+  -o-transform: translateX(280px);
+  transform: translateX(280px);
+}
+
+#nav-menu .navigation {
+  margin-top: 175px;
+}
+
+
+#nav-menu li {
+  padding-bottom: 1em;
+}
+
+#nav-menu li {
+  display: block;
+  line-height: 2em;
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 2;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  color: #111;
+}
+
+#nav-menu a {
+  color: #111;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+
+#nav-menu a.current {
+  background-color: #3a4a4d;
+  color: #FFF;
+}
+
+.no-touch #nav-menu a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #nav-menu .navigation {
+    margin-top: 175px;
+  }
+}
+
+#nav-menu.is-active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s 0s;
+  transition: transform .9s 0s, visibility 0s 0s;
+  /* smooth the scrolling on touch devices - webkit browsers */
+  -webkit-overflow-scrolling: touch;
+}
+
+#nav-menu .copyright-text {
+  font-family: Lato;
+  font-size: 12px;
+  padding: 1em;
+}
+
+/* ---------------------------------------------------------
+-------------- Menu & Navigation Styling Ends --------------
+-----------------------------------------------------------*/

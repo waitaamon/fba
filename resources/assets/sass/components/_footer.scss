@@ -1,0 +1,209 @@
+/* -------------------------------------------------------
+----------- Footer Section Styling Starts Here -------------
+---------------------------------------------------------*/
+
+.footer {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0px;
+  z-index: 112;
+}
+
+.footer p {
+  font-family: Quicksand;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000000;
+  z-index: 21;
+  margin-top: 11px;
+}
+
+
+.footer-social ul {
+  padding: 0.6em;
+  list-style-type: none;
+  text-align: right;
+}
+
+.footer-social li {
+  display: inline;
+}
+
+.footer-social i, .footer-social a {
+  font-size: 18px;
+  padding-left: 0.35em;
+  color: #111;
+  z-index: 21;
+}
+
+.footer-social a:hover {
+  color: #999;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer p {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .footer-social ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .footer p {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+}
+
+/* -------------------------------------------------------
+----------- Footer Section Styling Ends Here -------------
+---------------------------------------------------------*/
+
+
+
+/* -------------------------------------------------------
+-------- 2nd Footer Section Styling Starts Here ----------
+---------------------------------------------------------*/
+
+
+.footer-minimal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer-min-content h2 {
+  font-family: Poppins;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-min-content h6 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-min-content p {
+  font-family: QuickSand;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 25px;
+}
+
+
+.footer-min-content ul {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.footer-min-content li {
+  display: inline;
+}
+
+.footer-min-content a {
+  display: inline;
+  font-family: Quicksand;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-min-content a:hover {
+  color: #072DEF;
+  text-decoration: line-through;
+}
+
+/* ----- Footer light Bg -----*/
+
+.light-bg {
+  background: #FFF;
+}
+
+.light-bg h2 {
+  font-family: Poppins;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111;
+  letter-spacing: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.light-bg h6 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111;
+  letter-spacing: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.light-bg p {
+  font-family: QuickSand;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+  line-height: 25px;
+}
+
+
+.light-bg ul {
+  list-style: none;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.light-bg li {
+  display: inline;
+}
+
+.light-bg a {
+  display: inline;
+  font-family: Quicksand;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+  color: #111;
+  text-decoration: none;
+}
+
+.light-bg a:hover {
+  color: #072DEF;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------
+-------- 2nd Footer Section Styling Ends Here ----------
+---------------------------------------------------------*/
+
